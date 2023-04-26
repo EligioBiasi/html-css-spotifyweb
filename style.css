@@ -10,11 +10,12 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-family: 'PT Sans', sans-serif;
+    min-width: 552px;
 }
 
 nav{
     width: 40px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     background-color: black;
     color: #d2d2d2;
 }
@@ -62,6 +63,28 @@ ul{
     display: none;
 }
 
+.left-screen{
+    width: calc(100% - 40px);
+    height: calc(100vh - 80px);
+}
+
+.dark-blue-background{
+    background-color: #080b12;
+}
+
+.upgrade-button{
+    background-color: #080b12;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 0.5rem 2.2rem;
+
+}
+
+.upper-banner{
+    padding: 1.3rem 0.3rem;
+    justify-content: end;
+}
 /* Specific class */
 div.center span{
     display: none;
@@ -87,11 +110,6 @@ div.account img{
     height: 20px;
     background-color: #808080;
     border-radius: 50%;
-}
-
-div.install,
-div.account{
-    padding: 0.5rem 0;
 }
 
 div.profile hr{
@@ -144,5 +162,8 @@ div.playlist ul li{
         width: 160px;
         height: 35px;
         margin-bottom: 0.7rem;
+    }
+    .left-screen{
+        width: calc(100% - 160px);
     }
 }

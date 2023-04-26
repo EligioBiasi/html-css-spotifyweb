@@ -13,7 +13,7 @@ body{
 }
 
 nav{
-    width: 80px;
+    width: 40px;
     height: calc(100vh - 100px);
     background-color: black;
     color: #d2d2d2;
@@ -42,15 +42,16 @@ ul{
 .center{
     justify-content: center;
     align-items: center;
-    margin: 0.5rem 0;
+    margin: 0.25rem 0;
 }
 
 .profile{
     align-items: end;
 }
 
-.small-logo{
-    width: 65%;
+.small-icons{
+    width: 27.2px;
+    height: 27.2px;
 }
 
 .big-logo{
@@ -58,7 +59,7 @@ ul{
 }
 
 .playlist{
-    display: ;
+    display: none;
 }
 
 /* Specific class */
@@ -82,8 +83,8 @@ div.install p{
 }
 
 div.account img{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background-color: #808080;
     border-radius: 50%;
 }
@@ -93,12 +94,55 @@ div.account{
     padding: 0.5rem 0;
 }
 
+div.profile hr{
+    display: none;
+}
+
 div.add-playlist span{
     padding: 0 0.3rem;
 }
 
+div.playlist h4{
+    margin: 0.7rem 0;
+    color: white;
+}
+
+div.playlist ul{
+    font-size: 0.8rem;
+    padding: 0.6rem 0;
+}
+
+div.playlist ul li{
+    padding: 0.4rem 0;
+}
 /* Smartphone first */
 
 @media screen and (min-width:639px) {
-    
+    nav{
+        width: 180px;
+    }
+    div.center span{
+        display: block;
+        padding-left: 0.5rem;
+    }
+    .center{
+        justify-content: start;
+        align-items: center;
+        margin: 0.25rem 0;
+    }
+    .playlist{
+        display: block;
+    }
+    div.profile hr{
+        display: block;
+    }
+    .small-logo{
+        display: none;
+    }
+    .big-logo{
+        display: block;
+        width: 160px;
+        height: 35px;
+        margin-bottom: 0.7rem;
+    }
 }

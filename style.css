@@ -28,13 +28,29 @@ nav{
     margin: 0 auto;
 }
 
-/* Specific class */
+.nav-menu{
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+}
 
+.small-logo{
+    width: 65%;
+}
+
+.big-logo{
+    display: none;
+}
+
+/* Specific class */
+div.nav-menu span{
+    display: none;
+}
 
 
 
 /* Smartphone first */
 
-@media screen  {
+@media screen and (min-width:639px) {
     
 }

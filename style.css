@@ -70,6 +70,7 @@ ul{
 .left-screen{
     width: calc(100% - 40px);
     height: calc(100vh - 80px);
+    overflow-y: scroll;
 }
 
 .dark-blue-background{
@@ -98,6 +99,20 @@ ul{
     margin: 0 auto;
 }
 
+.container-content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card{
+    width: calc((100%/2) - 1.5rem);
+    margin: 1rem;
+}
+
+.title-card{
+    justify-content: center;
+    align-items: center;
+}
 /* Specific class */
 div.center span{
     display: none;
@@ -157,6 +172,25 @@ div.upper-menu ul li{
     font-size: 0.8em;
     font-weight: bold;
     width: calc(100%/4);
+    text-align: center;
+}
+
+div.upper-menu ul li hr{
+    padding:0 38%;
+    color: green;
+    display:none;
+}
+div.upper-menu ul li:hover hr{
+    display: block;
+}
+
+div.container-content h2{
+    color:white;
+    padding: 2rem 0;
+}
+
+div.card div img{
+    width: 100%;
 }
 /* Smartphone first */
 

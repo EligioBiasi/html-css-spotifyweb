@@ -29,6 +29,10 @@ ul{
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .list{
     flex-direction: column;
 }
@@ -72,6 +76,10 @@ ul{
     background-color: #080b12;
 }
 
+.blue-background{
+    background-color: #141922;
+}
+
 .upgrade-button{
     background-color: #080b12;
     color: white;
@@ -85,6 +93,11 @@ ul{
     padding: 1.3rem 0.3rem;
     justify-content: end;
 }
+.upper-menu{
+    width: 85%;
+    margin: 0 auto;
+}
+
 /* Specific class */
 div.center span{
     display: none;
@@ -133,6 +146,18 @@ div.playlist ul{
 div.playlist ul li{
     padding: 0.4rem 0;
 }
+
+div.upper-menu ul{
+    justify-content: center;
+    color: #7b7e82;
+}
+
+div.upper-menu ul li{
+    padding: 0.8rem 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: calc(100%/4);
+}
 /* Smartphone first */
 
 @media screen and (min-width:639px) {
@@ -165,5 +190,21 @@ div.playlist ul li{
     }
     .left-screen{
         width: calc(100% - 160px);
+    }
+    div.upper-menu ul li{
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (min-width:878px){
+    div.upper-menu ul li{
+        width: calc(100%/5);
+    }
+    
+}
+
+@media screen and (min-width:1140px){
+    div.upper-menu ul li{
+        width: calc(100%/6);
     }
 }

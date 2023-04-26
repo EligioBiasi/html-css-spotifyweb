@@ -7,11 +7,20 @@
 
 
 /* tag class */
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
 nav{
     width: 80px;
     height: calc(100vh - 100px);
     background-color: black;
     color: #d2d2d2;
+}
+
+ul{
+    list-style: none;
 }
 
 /* Generic class */
@@ -48,10 +57,18 @@ nav{
     display: none;
 }
 
+.playlist{
+    display: ;
+}
 
 /* Specific class */
 div.center span{
     display: none;
+}
+
+div.add-playlist i{
+    background-color: #a3a3a3;
+    padding: 0.5rem;
 }
 
 div.install i{
@@ -75,6 +92,11 @@ div.install,
 div.account{
     padding: 0.5rem 0;
 }
+
+div.add-playlist span{
+    padding: 0 0.3rem;
+}
+
 /* Smartphone first */
 
 @media screen and (min-width:639px) {

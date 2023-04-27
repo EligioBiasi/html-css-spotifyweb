@@ -336,6 +336,10 @@ div.central-footer-top i
     padding: 0 0.3rem;
 }
 
+div.space-around.list.flex i{
+    color: #878787;
+}
+
 /* Hover */
 div.upper-menu ul li:hover hr{
     display: block;
@@ -362,7 +366,9 @@ div.card-img:hover::after{
 
 div.flex.list.icon div.center.flex:hover,
 div.flex.list.icon div.add-playlist:hover,
-nav ul li:hover
+nav ul li:hover,
+div.install.flex.center:hover,
+div.space-around.list.flex i:hover
 {
     color: white;
 }

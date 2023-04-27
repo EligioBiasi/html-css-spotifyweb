@@ -24,6 +24,11 @@ ul{
     list-style: none;
 }
 
+footer{
+    height: 100%;
+    width: 100%;
+}
+
 /* Generic class */
 .flex{
     display: flex;
@@ -35,6 +40,10 @@ ul{
 
 .list{
     flex-direction: column;
+}
+
+.space-around{
+justify-content: space-around;
 }
 
 .container-nav{
@@ -81,6 +90,10 @@ ul{
     background-color: #141922;
 }
 
+.gray-background{
+    background-color: #282828;
+}
+
 .upgrade-button{
     background-color: #080b12;
     color: white;
@@ -104,6 +117,11 @@ ul{
     margin: 0 auto;
 }
 
+.container-footer{
+    width: 95%;
+    margin: 0 auto;
+}
+
 .card{
     width: calc((100%/2) - 0.6rem);
     margin: 0.3rem;
@@ -116,6 +134,19 @@ ul{
 
 .for-you{
     margin: 1.5rem 0;
+}
+
+.footer-img{
+    margin-right: 0.5rem;
+}
+
+.music-name{
+    margin-right: 1.5rem;
+}
+
+.central-footer-top{
+    justify-content: center;
+    align-items: center;
 }
 
 /* Specific class */
@@ -220,6 +251,33 @@ div.for-you h1{
 }
 .for-you-img img{
     width: 100%;
+}
+
+div.rounded img{
+    border-radius: 50%;
+}
+
+div.footer-img img{
+    width: 35px;
+    padding-top: 0.6rem;
+}
+
+footer section{
+    padding: 1rem 0;
+}
+
+div.music-name span{
+    color: #7a7a7a;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+div.music-name h4{
+    color: white;
+}
+
+.central-footer-top i{
+    padding: 0.5rem 0.7rem;
 }
 /* Smartphone first */
 @media screen and (min-width:768px) {

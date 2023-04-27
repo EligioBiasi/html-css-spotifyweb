@@ -175,25 +175,49 @@ justify-content: space-around;
     height: 4px;
     background-color: #5a5a5a;
     border-radius: 2rem;
+    position: relative;
+}
+
+.white-dot{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    position: absolute;
+    top: -0.3rem;
+    left: 3rem;
+    display: none;
+}
+
+.white-dot-2{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: -0.15rem;
+    left: 0.6rem;
+    display: none;
 }
 
 .music-bar-gray{
     width: 50px;
-    height: 4px;
+    height: 5px;
     background-color: #c1c1c1;
     border-radius: 2rem;
 }
 
 .music-bar-small{
-    width: 2rem;
+    width: 3.5rem;
     height: 4px;
     background-color: #5a5a5a;
     border-radius: 2rem;
+    position: relative;
 }
 
 .music-bar-gray-small{
-    width: 0.6rem;
-    height: 4px;
+    width: 1rem;
+    height: 5px;
     background-color: #c1c1c1;
     border-radius: 2rem;
 }
@@ -377,7 +401,19 @@ div.add-playlist:hover i{
 }
 
 button.upgrade-button:hover{
-    font-size: 1rem;
+    font-size: 0.9rem;
+}
+
+div.music-bar:hover div.music-bar-gray,
+div.music-bar-small:hover div.music-bar-gray-small
+{
+    background-color: lime;
+}
+
+div.music-bar:hover div.white-dot,
+div.music-bar-small:hover div.white-dot-2
+{
+    display: block;
 }
 /* Smartphone first */
 @media screen and (min-width:768px) {
@@ -406,7 +442,7 @@ button.upgrade-button:hover{
         display: block;
         width: 160px;
         height: 35px;
-        margin-bottom: 0.7rem;
+        margin: 0.7rem 0;
     }
     .left-screen{
         width: calc(100% - 160px);

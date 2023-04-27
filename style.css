@@ -46,6 +46,10 @@ footer{
 justify-content: space-around;
 }
 
+.space-between{
+    justify-content: space-between;
+    }
+
 .container-nav{
     width: 85%;
     margin: 0 auto;
@@ -145,10 +149,59 @@ justify-content: space-around;
 }
 
 .central-footer-top{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.central-footer-bottom
+{
     justify-content: center;
     align-items: center;
 }
 
+.right-footer{
+    align-items: center;
+}
+
+.time{
+    color:  white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 0 0.7rem;
+}
+
+.music-bar{
+    width: 100px;
+    height: 4px;
+    background-color: #5a5a5a;
+    border-radius: 2rem;
+}
+
+.music-bar-gray{
+    width: 50px;
+    height: 4px;
+    background-color: #c1c1c1;
+    border-radius: 2rem;
+}
+
+.music-bar-small{
+    width: 2rem;
+    height: 4px;
+    background-color: #5a5a5a;
+    border-radius: 2rem;
+}
+
+.music-bar-gray-small{
+    width: 0.6rem;
+    height: 4px;
+    background-color: #c1c1c1;
+    border-radius: 2rem;
+}
+
+.volume{
+    justify-content: center;
+    align-items: center;
+}
 /* Specific class */
 div.center span{
     display: none;
@@ -279,6 +332,13 @@ div.music-name h4{
 .central-footer-top i{
     padding: 0.5rem 0.7rem;
 }
+
+div.right-footer i,
+div.central-footer-top i
+{
+    padding: 0 0.3rem;
+}
+
 /* Smartphone first */
 @media screen and (min-width:768px) {
     nav{
@@ -313,6 +373,12 @@ div.music-name h4{
     }
     div.upper-menu ul li{
         width: calc(100%/3);
+    }
+    div.central-footer-top i{
+        padding: 0 2rem;
+    }
+    .music-bar{
+        width: 273px;
     }
 }
 

@@ -27,6 +27,8 @@ ul{
 footer{
     height: 100%;
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 /* Generic class */
@@ -185,7 +187,7 @@ justify-content: space-around;
     background-color: white;
     position: absolute;
     top: -0.3rem;
-    left: 3rem;
+    left: 2.6rem;
     display: none;
 }
 

@@ -85,7 +85,7 @@ justify-content: space-around;
 .left-screen{
     width: calc(100% - 40px);
     height: calc(100vh - 80px);
-    overflow-y: auto;
+    overflow: auto;
 }
 
 .dark-blue-background{
@@ -339,7 +339,7 @@ div.footer-img img{
 }
 
 footer section{
-    padding: 1rem 0;
+    padding: 0.8rem 0;
 }
 
 div.music-name span{
